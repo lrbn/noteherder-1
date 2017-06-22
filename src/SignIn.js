@@ -10,6 +10,8 @@ const SignIn = () => {
 
   return (
     <div>
+      <h2>Welcome to Noteherder</h2>
+      <h3>Please sign in with the following options:</h3>
       <button
         className="SignIn"
         onClick={() => authenticate(githubProvider)}

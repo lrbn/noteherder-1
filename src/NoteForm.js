@@ -28,6 +28,35 @@ class NoteForm extends Component {
     this.props.removeNote(this.props.currentNote)
   }
 
+  boldText = (ev) => {
+    console.log("Bolded")
+  }
+
+  underlineText = (ev) => {
+    console.log("Underlined")
+  }
+
+  italicizeText = (ev) => {
+    console.log("Italicized")
+  }
+
+  // showSelectionInsideTextarea() {
+    
+  //   var textComponent = document.getElementById('textarea')
+  //   var selectedText;
+  //   if (document.selection !== undefined) {
+  //     textComponent.focus();
+  //     var sel = document.selection.createRange();
+  //     selectedText = sel.text;
+  //   } else if (textComponent.selectionStart !== undefined) {
+  //     var startPos = textComponent.selectionStart
+  //     var endPos = textComponent.selectionEnd
+  //     selectedText = textComponent.value.substring(startPos, endPos)
+  //   }
+  //   // alert("You selected " + selectedText)
+    
+  // }
+
   render() {
     return (
       <div className="NoteForm">
@@ -42,8 +71,14 @@ class NoteForm extends Component {
             />
           </p>
           <p>
+            <span>
+              <button onClick={this.boldText} className="bold fa fa-bold" type="button"></button>
+              <button onClick={this.underlineText} className="underline fa fa-underline" type="button"></button>
+              <button onClick={this.italicizeText} className="italic fa fa-italic" type="button"></button>
+            </span>
             <textarea
               name="body"
+              id="textarea"
               placeholder="Just start typing..."
               onChange={this.handleChanges}
               value={this.props.currentNote.body}
