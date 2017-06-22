@@ -1,6 +1,10 @@
 {
   "hosting": {
+<<<<<<< HEAD
     "public": "public",
+=======
+    "public": "build",
+>>>>>>> f6f3f49ae571d02ee82ea41bb9738487fa57c5fb
     "rewrites": [
       {
         "source": "**",
