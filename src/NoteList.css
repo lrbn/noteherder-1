@@ -35,10 +35,16 @@ ul#notes a,
 ul#notes a:link,
 ul#notes a:visited,
 ul#notes a:hover,
+<<<<<<< HEAD
 ul#notes, a:active {
   color: inherit;
   text-decoration: none;
   
+=======
+ul#notes a:active {
+  color: inherit;
+  text-decoration: none;
+>>>>>>> f7962477d1f8e894ad74e09ab1b8049b33c05d6b
 }
 
 ul#notes > li {
@@ -58,7 +64,7 @@ ul#notes li .note {
   margin: 0 2rem;
   padding: 1rem 4px; 
 }
-ul#notes li:first-of-type .note {
+ul#notes a:first-of-type li .note {
   border-top: none; 
 }
 ul#notes li:hover {
